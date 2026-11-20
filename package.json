@@ -4,8 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "vite build --base=./",
-    "prebuild": "python3 scripts/preparar_midias.py"
+    "build": "vite build",
+    "prebuild": "python3 scripts/preparar_midias.py",
+    "postbuild": "node scripts/preparar_entrada_estatica.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

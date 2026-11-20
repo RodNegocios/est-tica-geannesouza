@@ -1,6 +1,7 @@
 import {stories} from './generated/stories.json';
 export {stories};
-export const media = name => './media/' + name;
+const mediaRoot = document.documentElement.dataset.mediaRoot || './media/';
+export const media = name => mediaRoot + name;
 export const whatsapp = 'https://wa.me/5569992615718';
 export const instagram = 'https://www.instagram.com/centroespecializadogeannesouza/';
 export const map = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Geanne Souza Centro Especializado, R. Carlos de Obregon, 322, Jardim América, Vilhena RO');

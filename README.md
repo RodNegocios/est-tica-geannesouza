@@ -2,6 +2,10 @@
 
 Site em português do centro de estética de Vilhena, com abertura em camadas, quatro histórias de clientes, mural de fotografias e agendamento pelo WhatsApp. O portfólio integra os componentes ScrollStack e DriftWall fornecidos no briefing.
 
+## Hospedar pela integração Git da Hostinger
+
+A raiz da branch `main` contém o `index.html` de produção. Ele carrega os arquivos compilados de `dist/`, com caminhos relativos ao domínio ou à subpasta. A hospedagem estática pode servir o checkout diretamente.
+
 ## Gerar a versão para publicação
 
 O build utiliza Node.js 22.12 ou superior, Python 3 com Pillow e FFmpeg disponível no PATH. No diretório do repositório, execute:
@@ -12,7 +16,7 @@ npm ci
 npm run build
 ```
 
-O comando prepara as imagens WebP, extrai as capas dos três vídeos e gera os arquivos estáticos em `dist/`. A preparação lê as fotos e os vídeos das pastas originais do repositório.
+O comando prepara as imagens WebP, extrai as capas dos três vídeos e gera os arquivos estáticos em `dist/`. A preparação lê as fotos e os vídeos das pastas originais do repositório. O modelo de desenvolvimento é `site.html`. O build também atualiza o `index.html` da raiz. Ao alterar o site, inclua o código-fonte, a entrada da raiz e a nova `dist/` no mesmo commit.
 
 ## Publicar na Hostinger
 
