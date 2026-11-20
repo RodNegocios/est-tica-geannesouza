@@ -1,0 +1,19 @@
+{
+  "name": "geanne-souza-centro-especializado",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build --base=./",
+    "prebuild": "python3 scripts/preparar_midias.py"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "@fontsource/cormorant-garamond": "^5.2.0",
+    "@fontsource/dm-sans": "^5.2.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
+}
